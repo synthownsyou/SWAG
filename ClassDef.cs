@@ -94,8 +94,7 @@ public static class ClassDef
         ["laboratory"] = "laboratory",
         ["tarkovstreets"] = "streets",
         ["sandbox"] = "groundzero",
-        ["sandbox_high"] = "groundzero_high",
-        ["labyrinth"] = "labyrinth"
+        ["sandbox_high"] = "groundzero_high"
     };
 
     public static readonly Dictionary<string, string> DiffProper = new(StringComparer.OrdinalIgnoreCase)
@@ -120,8 +119,7 @@ public static class ClassDef
         "tarkovstreets",
         "woods",
         "sandbox",
-        "sandbox_high",
-        "labyrinth"
+        "sandbox_high"
     ];
 
     public static readonly List<string> PmcAlwaysEnemies =
