@@ -1,8 +1,9 @@
 using SPTarkov.Server.Core.Models.Spt.Mod;
+using SPTarkov.Server.Web;
 
 namespace SWAG;
 
-public record ModMetadata : IModMetadata
+public record ModMetadata : IModMetadata, IModBlazorMetadata
 {
     public string ModGuid { get; init; } = "com.arys.swag";
     public string Name { get; init; } = "SWAG";
@@ -15,4 +16,7 @@ public record ModMetadata : IModMetadata
     public string? Url { get; init; } = "https://github.com/ArysWasTaken/SWAG";
     public string License { get; init; } = "MIT";
     public bool HasPrepatcher { get; init; } = false;
+    public string? WWWRootUrl { get; init; }
+    public string? HomePage { get; init; }
+    public string? HomePageDescription { get; init; }
 }

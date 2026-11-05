@@ -12,7 +12,7 @@ using SPTarkov.Server.Core.Utils.Json;
 
 namespace SWAG;
 
-[Injectable(TypePriority = OnLoadOrder.PostLoad + 1)]
+[Injectable(InjectionType.Singleton, TypePriority = OnLoadOrder.PostLoad + 1)]
 public class SwagMod(
     ISptLogger<SwagMod> logger,
     LocationTable locationTable,
