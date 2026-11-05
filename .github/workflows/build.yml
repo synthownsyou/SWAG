@@ -1,0 +1,38 @@
+name: Build SWAG
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET 10
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Restore packages
+        run: dotnet restore
+
+      - name: Build
+        run: dotnet build -c Release --no-restore
+
+      - name: Package mod
+        run: |
+          mkdir -p artifact/SWAG
+          cp bin/Release/SWAG.dll artifact/SWAG/
+          cp -r config artifact/SWAG/
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: SWAG
+          path: artifact/SWAG/

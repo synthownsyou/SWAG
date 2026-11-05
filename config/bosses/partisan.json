@@ -1,0 +1,157 @@
+{
+  "customs": [
+    {
+      "BossChance": 15,
+      "BossEscortAmount": "0",
+      "BossEscortType": "followerzryachiy",
+      "BossName": "bosspartisan",
+      "BossZone": [
+        "ZoneBridge",
+        "ZoneCrossRoad",
+        "ZoneGasStation",
+        "ZoneOldAZS",
+        "ZoneFactoryCenter",
+        "ZoneWade"
+      ],
+      "Supports": null,
+      "Time": -1
+    }
+  ],
+  "factory": [
+    {
+      "BossChance": 0,
+      "BossEscortAmount": "0",
+      "BossEscortType": "followerzryachiy",
+      "BossName": "bosspartisan",
+      "BossZone": null,
+      "Supports": null,
+      "Time": -1
+    }
+  ],
+  "factory_night": [
+    {
+      "BossChance": 0,
+      "BossEscortAmount": "0",
+      "BossEscortType": "followerzryachiy",
+      "BossName": "bosspartisan",
+      "BossZone": null,
+      "Supports": null,
+      "Time": -1
+    }
+  ],
+  "groundzero": [
+    {
+      "BossChance": 0,
+      "BossEscortAmount": "0",
+      "BossEscortType": "followerzryachiy",
+      "BossName": "bosspartisan",
+      "BossZone": null,
+      "Supports": null,
+      "Time": -1
+    }
+  ],
+  "groundzero_high": [
+    {
+      "BossChance": 0,
+      "BossEscortAmount": "0",
+      "BossEscortType": "followerzryachiy",
+      "BossName": "bosspartisan",
+      "BossZone": null,
+      "Supports": null,
+      "Time": -1
+    }
+  ],
+  "interchange": [
+    {
+      "BossChance": 0,
+      "BossEscortAmount": "0",
+      "BossEscortType": "followerzryachiy",
+      "BossName": "bosspartisan",
+      "BossZone": null,
+      "Supports": null,
+      "Time": -1
+    }
+  ],
+  "laboratory": [
+    {
+      "BossChance": 0,
+      "BossEscortAmount": "0",
+      "BossEscortType": "followerzryachiy",
+      "BossName": "bosspartisan",
+      "BossZone": null,
+      "Supports": null,
+      "Time": -1
+    }
+  ],
+  "lighthouse": [
+    {
+      "BossChance": 15,
+      "BossEscortAmount": "0",
+      "BossEscortType": "followerzryachiy",
+      "BossName": "bosspartisan",
+      "BossZone": [
+        "Zone_Island",
+        "Zone_LongRoad",
+        "Zone_Village",
+        "Zone_DestroyedHouse"
+      ],
+      "Supports": null,
+      "Time": -1
+    }
+  ],
+  "reserve": [
+    {
+      "BossChance": 0,
+      "BossEscortAmount": "0",
+      "BossEscortType": "followerzryachiy",
+      "BossName": "bosspartisan",
+      "BossZone": null,
+      "Supports": null,
+      "Time": -1
+    }
+  ],
+  "shoreline": [
+    {
+      "BossChance": 15,
+      "BossEscortAmount": "0",
+      "BossEscortType": "followerzryachiy",
+      "BossName": "bosspartisan",
+      "BossZone": [
+        "ZoneStartVillage",
+        "ZoneForestTruck",
+        "ZoneForestSpawn",
+        "ZoneMeteoStation",
+        "ZonePort"
+      ],
+      "Supports": null,
+      "Time": -1
+    }
+  ],
+  "streets": [
+    {
+      "BossChance": 0,
+      "BossEscortAmount": "0",
+      "BossEscortType": "followerzryachiy",
+      "BossName": "bosspartisan",
+      "BossZone": null,
+      "Supports": null,
+      "Time": -1
+    }
+  ],
+  "woods": [
+    {
+      "BossChance": 15,
+      "BossEscortAmount": "0",
+      "BossEscortType": "followerzryachiy",
+      "BossName": "bosspartisan",
+      "BossZone": [
+        "ZoneHouse",
+        "ZoneRoad",
+        "ZoneBigRocks",
+        "ZoneBrokenVill"
+      ],
+      "Supports": null,
+      "Time": -1
+    }
+  ]
+}
