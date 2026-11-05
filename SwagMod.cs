@@ -160,24 +160,33 @@ public class SwagMod(
 
             if (!useBosses && !useTriggered)
             {
-                locBase.BossLocationSpawn = [];
+                locBase.BossLocationSpawn = locBase.BossLocationSpawn
+                    .Where(IsExternalBossWave)
+                    .ToList();
                 continue;
             }
 
             if (!useBosses)
             {
                 locBase.BossLocationSpawn = locBase.BossLocationSpawn
-                    .Where(b => !string.IsNullOrEmpty(b.TriggerName))
+                    .Where(b => IsExternalBossWave(b) || !string.IsNullOrEmpty(b.TriggerName))
                     .ToList();
             }
 
             if (!useTriggered)
             {
                 locBase.BossLocationSpawn = locBase.BossLocationSpawn
-                    .Where(b => string.IsNullOrEmpty(b.TriggerName))
+                    .Where(b => IsExternalBossWave(b) || string.IsNullOrEmpty(b.TriggerName))
                     .ToList();
             }
         }
+    }
+
+    private static bool IsExternalBossWave(BossLocationSpawn wave)
+    {
+        var bossName = wave.BossName ?? "";
+        return !ClassDef.ReverseBossNames.ContainsKey(bossName)
+            && !string.Equals(bossName, "bossBoarSniper", StringComparison.OrdinalIgnoreCase);
     }
 
     private static void SetPmcHostility(LocationBase locBase)
